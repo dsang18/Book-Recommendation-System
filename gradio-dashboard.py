@@ -28,8 +28,8 @@ db_books = Chroma.from_documents(documents, OpenAIEmbeddings())
 
 def retrieve_semantic_recommendations(
         query: str,
-        category: str = None,
-        tone: str = None,
+        category: str = "",
+        tone: str = "",
         initial_top_k: int = 50,
         final_top_k: int = 16,
 ) -> pd.DataFrame:
